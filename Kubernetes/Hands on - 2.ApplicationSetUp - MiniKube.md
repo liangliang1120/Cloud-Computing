@@ -133,3 +133,93 @@ spec:
 
 
 ## MongoExpress
+mongo-express.yaml
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-express
+  labels:
+    app: mongo-express
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-express
+  template:
+    metadata:
+      labels:
+        app: mongo-express
+    spec:
+      containers:
+      - name: mongo-express
+        image: mongo-express
+        ports:
+        - containerPort: 8081
+        env:
+        - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-username
+        - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-password
+        - name: ME_CONFIG_MONGODB_SERVER
+          valueFrom: 
+            configMapKeyRef:
+              name: mongodb-configmap
+              key: database_url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-express-service
+spec:
+  selector:
+    app: mongo-express
+  type: LoadBalancer  
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+      nodePort: 30000
+
+```
+- nodePort: Port for external IP address, Port you need to put into browser （300000-32767）
+
+
+mongodb-configmap.yaml
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongodb-configmap
+data:
+  database_url: mongodb-service
+```
+- kubectl apply -f mongo-configmap.yaml
+- kubectl apply -f mongo-express.yaml
+- kubectl get pod
+- kubectl logs mongo-express-5bf4b56f47-hkp86
+- kubectl get service
+
+- cluster IP will give the service an internal IP address
+- loadBalancer will give interal IP address, in addition to that, will also give external IP address
+
+
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/35073431/206930364-b9120790-7e14-4e89-9491-a89326e90d53.png">
+
+- minikube service mongo-express-service
+
+
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/35073431/206930979-10e2b5b3-9c92-4718-b026-09d49e442690.png">
+
+<img width="1175" alt="image" src="https://user-images.githubusercontent.com/35073431/206931043-cb9e8a05-23ef-4de3-9f73-7bfa699f687e.png">
+
+
+![image](https://user-images.githubusercontent.com/35073431/206931017-b1b0edc4-ee97-4bfe-89b3-10201cee3da6.png)
+
+
