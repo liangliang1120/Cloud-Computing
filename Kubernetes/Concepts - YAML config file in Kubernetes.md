@@ -6,9 +6,25 @@
 ![image](https://user-images.githubusercontent.com/35073431/206890509-87619029-b36f-4d2b-9542-0e55ddf890b8.png)
 ![image](https://user-images.githubusercontent.com/35073431/206890513-95aab68e-2e85-4a3a-a451-0b3f8297e542.png)
 
+template
+- template in spec has its own metadata and spec section
+- applies to Pod
+- blueprint for a pod
+
+Labels and selectors
+- metadata consains label
+- spec contains selectors
+
 
 ### Connecting Deployments to Service to Pods
+- key-value pair for component
+- Pods get the label through the template blueprint
+- This label is matched by the selector
 
-### Demo
+![image](https://user-images.githubusercontent.com/35073431/206891405-dfc2bc64-7710-4bec-96bd-8fdf0d623cb5.png)
+
+![image](https://user-images.githubusercontent.com/35073431/206891292-a6e9e36b-a661-46d6-80f4-e470123a4835.png)
+
+
 
 
