@@ -61,6 +61,8 @@ data:
 get encoded username and password: echo -n 'username' |base64
 
 <img width="494" alt="image" src="https://user-images.githubusercontent.com/35073431/206893283-682df7f9-cbe7-49cc-ade1-aec4935254f7.png">
+
 - apply files
 -- kubectl apply -f mongo-secret.yaml
+
 ## MongoExpress
