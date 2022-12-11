@@ -27,5 +27,17 @@
 
 
 ### what are the use cases
+![image](https://user-images.githubusercontent.com/35073431/206932579-5f636ab0-6793-4543-b316-83501698a928.png)
+
+![image](https://user-images.githubusercontent.com/35073431/206932670-18e7d144-2638-4010-a588-f45a244e0c76.png)
+
+![image](https://user-images.githubusercontent.com/35073431/206932726-b418a71c-5f03-4bd0-bf58-cf80343f32e4.png)
+
+![image](https://user-images.githubusercontent.com/35073431/206932800-2c835777-074f-4bf4-bc9d-2b8081c14003.png)
+
+
 
 ### how Namespaces work and how to uses it
+1. kubectl apply -f mysql-configmap.yaml --namespace=may-namespace
+2. ![image](https://user-images.githubusercontent.com/35073431/206933149-19fce7a2-dc20-4c51-b29e-3a4a49cba670.png)
+
