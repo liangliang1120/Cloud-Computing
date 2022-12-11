@@ -34,7 +34,8 @@ for stateful apps or databases
 ### Deployment: 
 for stateless apps
 
-![image](https://user-images.githubusercontent.com/35073431/206886334-42d5f159-4bf2-4ac7-ab83-047512207c75.png)
+![image](https://user-images.githubusercontent.com/35073431/206886360-0fd63331-5af2-4d48-9249-eb08ba562d24.png)
+
 
 
 ## Kubernetes Architecture
