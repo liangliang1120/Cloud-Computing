@@ -1,5 +1,3 @@
-![image](https://user-images.githubusercontent.com/35073431/206886415-e8887484-1e1f-4850-88d0-2d4752592a12.png)
-
 ### Create pot, we create the deployment
 - kubectl create deployment nginx-depl --image=nginx
 
