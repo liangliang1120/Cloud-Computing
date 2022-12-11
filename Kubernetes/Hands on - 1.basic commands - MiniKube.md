@@ -37,7 +37,7 @@ we get auto-generate config file with default value
 why? It s impractical to write all the options on a command line, so usually use kubernetes configuration files
 - touch ngix-deployment.yaml
 - vim ngix-deployment.yaml
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
