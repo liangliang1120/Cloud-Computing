@@ -15,6 +15,13 @@
 - what are the use cases
 - how Namespaces work and how to uses it
 
+### [4. Kubernetes Ingress](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Concepts%20-%204.Kubernetes%20Ingress.md)
+- what is Ingress
+- Ingress YAML configuration
+- when do you need Ingress
+- Ingress controller
+
+---
 ## hands on
 
 ### [1. basic commands](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Hands%20on%20-%201.basic%20commands%20-%20MiniKube.md)
@@ -24,3 +31,5 @@
 - How to create the yaml file and apply it 
 - MongoDB:a document database with the scalability and flexibility. NoSQL
 - Mongo Express: Web-based MongoDB admin interface
+
+###
