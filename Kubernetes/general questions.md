@@ -44,6 +44,9 @@ for stateless apps
 - 4 processes run on every master node:1. 
 API server 2. Scheduler 3.controller manager 4.etcd(key value store: cluster brain)
 
+![image](https://user-images.githubusercontent.com/35073431/206890609-be018097-afcb-4369-ac56-7a81ebcad2b0.png)
+
+
 ## Example cluster set-up
 2 master nodes and 3 worker nodes
 
