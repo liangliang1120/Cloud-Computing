@@ -36,8 +36,7 @@ for stateless apps
 
 ## Kubernetes Architecture
 - Each Node has multiple Pods on it
-- 3processes must be installed on every Node: 
-1. container runtime 2. Kubelet 3. Kube proxy
+- 3processes must be installed on every Node: 1. container runtime 2. Kubelet 3. Kube proxy
 - 4 processes run on every master node:1. 
 API server 2. Scheduler 3.controller manager 4.etcd(key value store: cluster brain)
 
