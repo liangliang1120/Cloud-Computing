@@ -39,5 +39,6 @@
 
 ### how Namespaces work and how to uses it
 1. kubectl apply -f mysql-configmap.yaml --namespace=may-namespace
-2. ![image](https://user-images.githubusercontent.com/35073431/206933149-19fce7a2-dc20-4c51-b29e-3a4a49cba670.png)
+2. metadata: namespace
+![image](https://user-images.githubusercontent.com/35073431/206933149-19fce7a2-dc20-4c51-b29e-3a4a49cba670.png)
 
