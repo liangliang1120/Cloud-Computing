@@ -15,6 +15,7 @@
 ### [1. basic commands](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Hands%20on%20-%201.basic%20commands%20-%20MiniKube.md)
 - creat,delete,edit,log Pods,services
 
-### [2. Set up MongoDB and Mongo Express](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Hands%20on%20-%202.ApplicationSetUp%20-%20MiniKube.md)
+### [2. Set up MongoDB and Mongo Express by Minikube](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Hands%20on%20-%202.ApplicationSetUp%20-%20MiniKube.md)
+- How to create the yaml file and apply it 
 - MongoDB:a document database with the scalability and flexibility. NoSQL
 - Mongo Express: Web-based MongoDB admin interface
