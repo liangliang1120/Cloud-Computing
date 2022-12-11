@@ -6,7 +6,7 @@ Opensource container orchestration tool
 2.	Increased usage of containers
 3.	A proper way to manage hundreds of containers
 
-##What Kubernetes offer?
+## What Kubernetes offer?
 1.	High availability or no downtime
 2.	Scalability / high performance
 3.	Disaster recovery -backup and restore
@@ -43,10 +43,12 @@ API server 2. Scheduler 3.controller manager 4.etcd(key value store: cluster bra
 
 ## Example cluster set-up
 2 master nodes and 3 worker nodes
+
 ## Add new Master/Node server
 1.	Get new bare server
 2.	Install all the master/worker node processes
 3.	Add it to the cluster
+
 ## Mini Cube: 
 master and node processes run on ONE machine. One node K8s cluster runs in a virtualbox on your laptop for testing purposes
 
