@@ -49,7 +49,7 @@ we can check the mongo port,environment variables by searching in Docker website
 Secret file
 
 mongo-scret.yaml
-```
+```yaml
 apiVersion: apps/v1
 kind: Secret
   name: mongodb-secret
