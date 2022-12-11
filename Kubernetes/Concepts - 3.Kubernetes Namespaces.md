@@ -21,6 +21,9 @@
 ### how to create your namespaces
 1. kubectl create namespace [name]
    kubectl get namespace
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/35073431/206936378-b2de3e3d-1198-41a7-ad17-c2fdd770798e.png">
+
 2. using config file
 
 ![image](https://user-images.githubusercontent.com/35073431/206932486-4e32fcce-8002-4b98-a4b0-a7932c98fb0e.png)
@@ -36,9 +39,9 @@
 ![image](https://user-images.githubusercontent.com/35073431/206932800-2c835777-074f-4bf4-bc9d-2b8081c14003.png)
 
 
-
 ### how Namespaces work and how to uses it
 1. kubectl apply -f mysql-configmap.yaml --namespace=may-namespace
 2. metadata: namespace
+
 ![image](https://user-images.githubusercontent.com/35073431/206933149-19fce7a2-dc20-4c51-b29e-3a4a49cba670.png)
 
