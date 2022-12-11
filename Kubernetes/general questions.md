@@ -33,6 +33,7 @@ storage on local machine,or remote outside of K8s cluster
 for stateful apps or databases
 ### Deployment: 
 for stateless apps
+
 ![image](https://user-images.githubusercontent.com/35073431/206886334-42d5f159-4bf2-4ac7-ab83-047512207c75.png)
 
 
