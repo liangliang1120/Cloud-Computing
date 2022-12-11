@@ -1,3 +1,4 @@
+All the crud operations happends on the deployment level
 ### Create pot, we create the deployment
 - kubectl create deployment nginx-depl --image=nginx
 
@@ -33,5 +34,41 @@ we get auto-generate config file with default value
 
 
 ### apply config file
+why? It s impractical to write all the options on a command line, so usually use kubernetes configuration files
+- touch ngix-deployment.yaml
+- vim ngix-deployment.yaml
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers: 
+      - name: nginx
+        image: nginx:1.16
+        ports:
+        - containerPort: 80
+```
+- kubectl apply -f nginx-deployment.yaml
+
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/35073431/206890112-1202a9e7-81b3-413a-8031-822ca8a225f9.png">
+
+
+![image](https://user-images.githubusercontent.com/35073431/206890319-39819a46-7966-4294-8a74-cbb1dbbf8543.png)
+
+![image](https://user-images.githubusercontent.com/35073431/206890331-07322985-fd14-40c9-903d-02a7dd99232d.png)
+
+
 
 
