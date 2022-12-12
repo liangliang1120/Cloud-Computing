@@ -145,7 +145,7 @@ ENTRYPOINT ["node", "app.js"]
 23. Run the image on a container on localhost:
 - sudo docker run --name kubia-container2 -p 8080:8080 -d kubia
 - sudo docker ps -a
-- curl http://localhost:3000/api/score?studnt_id=11111
+- curl http://localhost:8080
 
 <img width="897" alt="image" src="https://user-images.githubusercontent.com/35073431/206958074-c3cb230d-d1f7-40a2-8d57-c15ceb15fc9a.png">
 
