@@ -26,6 +26,11 @@
 - What are Helm Charts
 - How to use them
 - WHen to use them
+- What is Tiller
+
+### [6. Kubernetes Volumes](https://github.com/liangliang1120/Cloud-Computing/blob/main/Kubernetes/Concepts%20-%206.Kubernetes%20Volumes.md)
+- PV, PVC, SC
+
 
 
 ---
