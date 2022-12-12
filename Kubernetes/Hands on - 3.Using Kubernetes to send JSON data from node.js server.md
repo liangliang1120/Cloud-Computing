@@ -252,6 +252,7 @@ $ kubectl get services
 10. Accessing the service through its external IP
 $ curl http://104.199.119.27:8080
 
-![image](https://user-images.githubusercontent.com/35073431/206988255-2ccd3ade-40a0-4abe-98f5-3fc7bff159f2.png)
+![image](https://user-images.githubusercontent.com/35073431/206988765-1b30ab24-29e5-45c3-b51e-05a225f7dc2c.png)
+
 
 
