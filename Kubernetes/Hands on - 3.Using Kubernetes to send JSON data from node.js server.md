@@ -60,6 +60,7 @@ grep -cw vmx /proc/cpuinfo
 <img width="1008" alt="image" src="https://user-images.githubusercontent.com/35073431/206947294-313b4781-91a0-4597-b959-c2941b0c02b8.png">
 
 11. Download Virtualbox sudo wget
+- sudo yum install wget
 -  sudo wget https://download.virtualbox.org/virtualbox/rpm/el/virtualbox.repo -P /etc/yum.repos.d
 -  
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/35073431/206947751-958ca8e9-449f-46ec-bde0-09a315c27a9e.png">
