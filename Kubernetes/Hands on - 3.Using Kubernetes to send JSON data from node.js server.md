@@ -109,7 +109,7 @@ grep -cw vmx /proc/cpuinfo
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/35073431/206949576-1befbdbb-5b9d-46f4-8a11-1ee91ab283c3.png">
 
 20. Create Student_info.js
-- vim student_info.js
+- vim app.js
 ```
 const http = require('http');
 const os = require('os');
@@ -251,5 +251,8 @@ $ kubectl get services
 
 10. Accessing the service through its external IP
 $ curl http://104.199.119.27:8080
+
+![image](https://user-images.githubusercontent.com/35073431/206985252-2039e119-a8b9-48ec-a18a-a2854417ce1b.png)
+
 
 
